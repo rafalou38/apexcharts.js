@@ -4,6 +4,7 @@ import Animations from '../modules/Animations'
 import Fill from '../modules/Fill'
 import Helpers from './common/treemap/Helpers'
 import Filters from '../modules/Filters'
+import * as TreemapSquared from '../libs/Treemap-squared'
 
 import Utils from '../utils/Utils'
 
@@ -52,7 +53,7 @@ export default class TreemapChart {
       })
     })
 
-    const nodes = window.TreemapSquared.generate(
+    const nodes = TreemapSquared.generate(
       ser,
       w.globals.gridWidth,
       w.globals.gridHeight
